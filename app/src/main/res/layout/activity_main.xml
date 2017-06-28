@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.example.education.unifyid.MainActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pictureNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="picutueCaptured"
+            android:textColor="?android:attr/colorFocusedHighlight"
+            android:textColorHighlight="#151414"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/picNum"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/pictureNumber"
+            android:layout_toRightOf="@+id/pictureNumber"
+            android:layout_weight="1"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/pictureNumber"
+            android:layout_toRightOf="@+id/pictureNumber"
+            android:layout_weight="1"
+            android:text=" of 10"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/answer"
+            android:layout_alignRight="@+id/answer"
+            android:layout_alignTop="@+id/imageView"
+            android:text="New Text"
+            android:textIsSelectable="true"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toLeftOf="@+id/timer"
+            android:layout_toStartOf="@+id/timer"
+            android:layout_weight="0.72"
+            android:src="@drawable/icon_timer" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_weight="0.57" />
+
+    <Button
+        android:id="@+id/capture"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:text="Capture" />
+
+</LinearLayout>
